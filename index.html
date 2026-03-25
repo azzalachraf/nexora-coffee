@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexora Coffee | Crafted Coffee. Perfected Experience.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-loading">
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <div class="loader" id="page-loader" aria-live="polite">
+        <div class="loader-mark" aria-hidden="true">
+            <span class="loader-ring"></span>
+            <span class="loader-ring loader-ring--secondary"></span>
+        </div>
+        <p class="loader-title">Preparing the Nexora Pour</p>
+        <p class="loader-status" id="loader-status">Loading 0 / 113 frames</p>
+    </div>
+
+    <header class="site-header" id="site-header">
+        <a class="brand" href="#top" aria-label="Nexora Coffee home">
+            <span class="brand-mark">N</span>
+            <span class="brand-text">Nexora Coffee</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav">
+            <a href="#features">Features</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#order" class="nav-pill">Order Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="top">
+            <div class="hero-pin">
+                <div class="hero-stage-glow hero-stage-glow--left" aria-hidden="true"></div>
+                <div class="hero-stage-glow hero-stage-glow--right" aria-hidden="true"></div>
+                <div class="hero-spotlight" aria-hidden="true"></div>
+
+                <div class="hero-grid">
+                    <div class="hero-copy">
+                        <p class="eyebrow">Cold-crafted reserve</p>
+                        <h1>Crafted Coffee. Perfected Experience.</h1>
+                        <p class="hero-text">Premium iced coffee designed for those who expect more from every sip.</p>
+
+                        <div class="hero-actions">
+                            <a class="button button-primary" href="#features">Explore Coffee</a>
+                            <a class="button button-secondary" href="#order">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-stage">
+                        <div class="hero-stage-frame">
+                            <canvas id="hero-canvas" aria-label="Scroll controlled Nexora Coffee cup animation"></canvas>
+                        </div>
+                        <div class="hero-caption">
+                            <span>113-frame cinematic product sequence</span>
+                            <span>Scroll to advance the pour</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="hero-progress" aria-hidden="true">
+                    <span class="hero-progress-track"></span>
+                    <span class="hero-progress-fill" id="hero-progress-fill"></span>
+                </div>
+
+                <div class="scroll-cue" id="scroll-cue">
+                    <span class="scroll-line"></span>
+                    <span>Scroll to reveal the explosion</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="features section" id="features">
+            <div class="section-shell">
+                <div class="section-intro">
+                    <p class="eyebrow">The Nexora Standard</p>
+                    <div class="title-row">
+                        <h2>Premium coffee shaped with precision at every stage.</h2>
+                        <p>From sourcing and roast control to temperature and finish, every detail is tuned to feel deliberate, elegant, and unmistakably premium.</p>
+                    </div>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card reveal-card">
+                        <span class="feature-index">01</span>
+                        <h3>Premium Beans</h3>
+                        <p>Hand-selected lots chosen for layered sweetness, clean acidity, and lasting body.</p>
+                        <span class="feature-accent">Origin-led selection</span>
+                    </article>
+
+                    <article class="feature-card reveal-card">
+                        <span class="feature-index">02</span>
+                        <h3>Expert Roasting</h3>
+                        <p>Roast curves are calibrated for depth, aroma, and a smooth finish that never turns harsh.</p>
+                        <span class="feature-accent">Controlled development</span>
+                    </article>
+
+                    <article class="feature-card reveal-card">
+                        <span class="feature-index">03</span>
+                        <h3>Perfectly Chilled</h3>
+                        <p>Cold-crafted for clarity and balance, with a texture that stays refined even over ice.</p>
+                        <span class="feature-accent">Silk-smooth refreshment</span>
+                    </article>
+
+                    <article class="feature-card reveal-card">
+                        <span class="feature-index">04</span>
+                        <h3>Crafted Experience</h3>
+                        <p>Packaging, pour, and presentation work together to turn a drink into a ritual.</p>
+                        <span class="feature-accent">Luxury in every sip</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials section" id="testimonials">
+            <div class="section-shell">
+                <div class="section-intro section-intro--centered">
+                    <p class="eyebrow">What Customers Say</p>
+                    <div class="title-row title-row--centered">
+                        <h2>Designed to leave an impression long after the glass is empty.</h2>
+                        <p>Every review points to the same thing: balance, depth, and a premium moment that feels worth slowing down for.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-stage" data-carousel>
+                    <button class="carousel-button" type="button" data-carousel-prev aria-label="Previous testimonial">
+                        <span></span>
+                    </button>
+
+                    <div class="testimonial-stack">
+                        <article class="testimonial-card is-active">
+                            <div class="testimonial-rating" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="testimonial-quote">"One of the most polished iced coffees I've had. It feels rich, cold, and effortless all at once."</p>
+                            <div class="testimonial-author">
+                                <strong>Sarah M.</strong>
+                                <span>Creative Director</span>
+                            </div>
+                        </article>
+
+                        <article class="testimonial-card">
+                            <div class="testimonial-rating" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="testimonial-quote">"The flavor is layered without being heavy. It tastes like a premium brand should feel, precise and memorable."</p>
+                            <div class="testimonial-author">
+                                <strong>David T.</strong>
+                                <span>Hospitality Consultant</span>
+                            </div>
+                        </article>
+
+                        <article class="testimonial-card">
+                            <div class="testimonial-rating" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="testimonial-quote">"Nexora turns my coffee break into a ritual. The finish is clean, bold, and genuinely elevated."</p>
+                            <div class="testimonial-author">
+                                <strong>Emily R.</strong>
+                                <span>Brand Strategist</span>
+                            </div>
+                        </article>
+
+                        <article class="testimonial-card">
+                            <div class="testimonial-rating" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="testimonial-quote">"You can taste the care in it immediately. Smooth on the first sip, expressive on the last."</p>
+                            <div class="testimonial-author">
+                                <strong>Marcus L.</strong>
+                                <span>Product Designer</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <button class="carousel-button" type="button" data-carousel-next aria-label="Next testimonial">
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="carousel-dots" id="carousel-dots" aria-label="Testimonial navigation"></div>
+            </div>
+        </section>
+
+        <section class="cta section" id="order">
+            <div class="cta-orb cta-orb--one" aria-hidden="true"></div>
+            <div class="cta-orb cta-orb--two" aria-hidden="true"></div>
+
+            <span class="floating-bean floating-bean--1" aria-hidden="true"></span>
+            <span class="floating-bean floating-bean--2" aria-hidden="true"></span>
+            <span class="floating-bean floating-bean--3" aria-hidden="true"></span>
+            <span class="floating-bean floating-bean--4" aria-hidden="true"></span>
+            <span class="floating-bean floating-bean--5" aria-hidden="true"></span>
+
+            <div class="cta-panel">
+                <p class="eyebrow">Order the Experience</p>
+                <h2>Ready to Experience Nexora Coffee?</h2>
+                <p>Bring the chill, the depth, and the cinematic finish to your daily ritual with a coffee built to stand out.</p>
+                <div class="hero-actions cta-actions">
+                    <a class="button button-primary" href="mailto:orders@nexoracoffee.com">Order Coffee</a>
+                    <a class="button button-secondary" href="#top">Back to Top</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="section-shell footer-shell">
+            <p class="footer-brand">Nexora Coffee</p>
+            <p class="footer-copy">Crafted cold, roasted with intent, and designed for a premium daily ritual.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
