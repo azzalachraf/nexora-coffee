@@ -1,5 +1,5 @@
 const FRAME_COUNT = 113;
-const FRAME_URL = (index) => `ezgif-frame-${String(index).padStart(3, "0")}.png`;
+const FRAME_URL = (index) => `frames/ezgif-frame-${String(index).padStart(3, "0")}.png`;
 const MOBILE_BREAKPOINT = 768;
 
 const canvas = document.getElementById("hero-canvas");
@@ -585,3 +585,5 @@ if (document.readyState === "loading") {
 } else {
     initializeExperience();
 }
+
+
