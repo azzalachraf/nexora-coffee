@@ -1,1 +1,6 @@
 .chrome-headless/
+.chrome-headless-mobile/
+.readme-tools/
+.capture-readme.js
+.serve-readme.js
+.serve-readme.pid
